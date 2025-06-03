@@ -1,0 +1,20 @@
+#Using Official NOde.js Image
+FROM node:18-alpine
+
+#set working Directory insdie the Container
+WORKDIR /app 
+
+#Copying Pgk.json And pgk-lock.json first
+COPY package*.json ./
+
+# Install Dependencies
+RUN npm install
+
+#Copy the Rest of your app's source code
+COPY . .
+
+#Expose the App port
+EXPOSE 3000
+
+CMD ["npm", "start"]
+#start the app
