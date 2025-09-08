@@ -1,0 +1,7 @@
+#Simple Nginx Web Server
+
+#1:-Create a Dockerfile that:
+#2:-Uses the official nginx:alpine image as the base.
+#3:-Copies your custom index.html into /usr/share/nginx/html/.
+#4:-Exposes port 80.
+#5:-Run it and check the webpage in your browser.
